@@ -38,90 +38,10 @@ class Forms_model extends App_Model
      * @param mixed $data All $_POST data
      * @return  boolean
      */
-    public function add($data)
+    public function saverecords($data)
     {
-        if (isset($data['disabled'])) {
-            $data['active'] = 0;
-            unset($data['disabled']);
-        } else {
-            $data['active'] = 1;
-        }
-        if (isset($data['show_on_pdf'])) {
-            if (in_array($data['fieldto'], $this->pdf_fields)) {
-                $data['show_on_pdf'] = 1;
-            } else {
-                $data['show_on_pdf'] = 0;
-            }
-        } else {
-            $data['show_on_pdf'] = 0;
-        }
-
-        if (isset($data['required'])) {
-            $data['required'] = 1;
-        } else {
-            $data['required'] = 0;
-        }
-        if (isset($data['disalow_client_to_edit'])) {
-            $data['disalow_client_to_edit'] = 1;
-        } else {
-            $data['disalow_client_to_edit'] = 0;
-        }
-        if (isset($data['show_on_table'])) {
-            $data['show_on_table'] = 1;
-        } else {
-            $data['show_on_table'] = 0;
-        }
-
-        if (isset($data['only_admin'])) {
-            $data['only_admin'] = 1;
-        } else {
-            $data['only_admin'] = 0;
-        }
-        if (isset($data['show_on_client_portal'])) {
-            if (in_array($data['fieldto'], $this->client_portal_fields)) {
-                $data['show_on_client_portal'] = 1;
-            } else {
-                $data['show_on_client_portal'] = 0;
-            }
-        } else {
-            $data['show_on_client_portal'] = 0;
-        }
-        if ($data['field_order'] == '') {
-            $data['field_order'] = 0;
-        }
-
-        $data['slug'] = slug_it($data['fieldto'] . '_' . $data['name'], [
-            'separator' => '_',
-        ]);
-        $slugs_total = total_rows(db_prefix().'forms', ['slug' => $data['slug']]);
-
-        if ($slugs_total > 0) {
-            $data['slug'] .= '_' . ($slugs_total + 1);
-        }
-
-        if ($data['fieldto'] == 'company') {
-            $data['show_on_pdf']            = 1;
-            $data['show_on_client_portal']  = 1;
-            $data['show_on_table']          = 1;
-            $data['only_admin']             = 0;
-            $data['disalow_client_to_edit'] = 0;
-        } elseif ($data['fieldto'] == 'items') {
-            $data['show_on_pdf']            = 1;
-            $data['show_on_client_portal']  = 1;
-            $data['show_on_table']          = 1;
-            $data['only_admin']             = 0;
-            $data['disalow_client_to_edit'] = 0;
-        }
-
-        $this->db->insert(db_prefix().'forms', $data);
-        $insert_id = $this->db->insert_id();
-        if ($insert_id) {
-            log_activity('New Custom Field Added [' . $data['name'] . ']');
-
-            return $insert_id;
-        }
-
-        return false;
+        $this->db->insert(db_prefix().'forms',$data);
+        return true;
     }
 
     /**

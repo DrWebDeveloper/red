@@ -95,6 +95,11 @@ $route['admin/items/search'] = 'admin/invoice_items/search';
 */
 $route['admin/forms'] = 'admin/forms/index';
 $route['admin/forms/redaction'] = 'admin/forms/redaction';
+$route['admin/forms/redaction/update/'] = 'admin/forms/redaction/update';
+$route['admin/forms/redaction/update/'] = function (){
+    echo "woww";
+};
+$route['admin/forms/redaction/preds'] = 'admin/forms/redaction/preds';
 $route['admin/forms/correction'] = 'admin/forms/correction';
 
 /**

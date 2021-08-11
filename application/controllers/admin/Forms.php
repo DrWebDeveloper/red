@@ -14,11 +14,29 @@ class Forms extends AdminController
 
     public function redaction()
     {
+        if($this->input->post('save'))
+		{
+		    $data['no_texts']= $this->input->post('no_texts');
+            $data['no_words']= $this->input->post('no_words');
+            $data['basic_desc']= $this->input->post('basic_desc');
+            $data['standard_desc']= $this->input->post('standard_desc');
+            $data['professional_desc']= $this->input->post('professional_desc');
+            $data['basic_price']= $this->input->post('basic_price');
+            $data['standard_price']= $this->input->post('standard_price');
+            $data['professional_price']= $this->input->post('professional_price');
+			$response=$this->Forms_model->saverecords($data);
+			if($response==true){
+			        echo "Records Saved Successfully";
+			}
+			else{
+					echo "Insert error !";
+			}
+		}
         // $tb = $this->load->model('Forms_model')->get('id');
-        $result['data']=$this->Forms_model->display_records();
-        $this->load->view('admin/forms/redaction',$result);
+        $result['data'] = $this->Forms_model->display_records();
+        $this->load->view('admin/forms/redaction', $result);
         // $data = $tb->result();
-        
+
         // foreach ($query->result() as $row) {
         //     print_r($row);
         // }
@@ -41,6 +59,36 @@ class Forms extends AdminController
         // }
         // $data['title'] = _l('custom_fields');
         // $this->load->view('admin/forms/manage', $data);
+    }
+    public function update()
+    {
+
+        echo "Update";
+    
+    }
+    public function pred()
+    {
+        var_dump($_POST);
+        exit();
+        if ($this->input->post()) {
+            var_dump($_POST);
+exit();
+            var_dump($this->input->post());
+            $data['no_texts']= $this->input->post('no_texts');
+            $data['no_words']= $this->input->post('no_words');
+            $data['basic_desc']= $this->input->post('basic_desc');
+            $data['standard_desc']= $this->input->post('standard_desc');
+            $data['professional_desc']= $this->input->post('professional_desc');
+            $data['basic_price']= $this->input->post('basic_price');
+            $data['standard_price']= $this->input->post('standard_price');
+            $data['professional_price']= $this->input->post('professional_price');
+            $this->db->where('name', 'redaction');
+            $success = $this->db->update(db_prefix() . 'forms', [$data]);
+            if($success){
+                set_alert('success', _l('updated_successfully', _l('custom_field')));
+                $this->load->view('admin/forms');
+            }
+        }
     }
 
     public function field($id = '')
