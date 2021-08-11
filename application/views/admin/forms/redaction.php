@@ -73,7 +73,7 @@
                                     <label for="basic_price" class="control-label">
                                         <small class="req text-danger">* </small>Basic Price
                                     </label>
-                                    <input type="number" placeholder="(€)" id="basic_price" name="basic_price" class="form-control" value="<?php print_r($data[0]->basic_price); ?>">
+                                    <input type="text" placeholder="(€)" id="basic_price" name="basic_price" class="form-control" value="<?php print_r($data[0]->basic_price); ?>">
                                 </div>
                             </div>
                             <div class="col-md-4 border-right">
@@ -81,7 +81,7 @@
                                     <label for="standard_price" class="control-label">
                                         <small class="req text-danger">* </small>Standard Price
                                     </label>
-                                    <input type="number" placeholder="(€)" id="standard_price" name="standard_price" class="form-control" value="<?php print_r($data[0]->standard_price); ?>">
+                                    <input type="text" placeholder="(€)" id="standard_price" name="standard_price" class="form-control" value="<?php print_r($data[0]->standard_price); ?>">
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -89,7 +89,7 @@
                                     <label for="professional_price" class="control-label">
                                         <small class="req text-danger">* </small>Professional Price
                                     </label>
-                                    <input type="number" placeholder="(€)" id="professional_price" name="professional_price" class="form-control" value="<?php print_r($data[0]->professional_price); ?>">
+                                    <input type="text" placeholder="(€)" id="professional_price" name="professional_price" class="form-control" value="<?php print_r($data[0]->professional_price); ?>">
                                 </div>
                             </div>
                         </div>
@@ -107,14 +107,14 @@
                                         <small class="req text-danger">* </small>Title
                                     </label>
                                     <input type="text" placeholder="Example; HTML Formatting" id="box1_title" name="box1_title" class="form-control" value="<?php print_r($data[0]->box1_title); ?>">
-                                    <label for="product_name" class="control-label">
+                                    <label for="box1_desc" class="control-label">
                                         <small class="req text-danger">* </small>Detail
                                     </label>
                                     <input type="textarea" placeholder="Box 1 Description" id="box1_desc" name="box1_desc" class="form-control" value="<?php print_r($data[0]->box1_desc); ?>">
                                     <label for="box1_price" class="control-label">
                                         <small class="req text-danger">* </small>Price
                                     </label>
-                                    <input type="number" placeholder="(€)" id="box1_price" name="box1_price" class="form-control" value="<?php print_r($data[0]->box1_price); ?>">
+                                    <input type="text" placeholder="(€)" id="box1_price" name="box1_price" class="form-control" value="<?php print_r($data[0]->box1_price); ?>">
                                 </div>
                             </div>
                             <div class="col-md-3 col-xs-6 border-right">
@@ -128,14 +128,14 @@
                                         <small class="req text-danger">* </small>Title
                                     </label>
                                     <input type="text" placeholder="Example; SEO Optimization" id="box2_title" name="box2_title" class="form-control" value="<?php print_r($data[0]->box2_title); ?>">
-                                    <label for="product_name" class="control-label">
+                                    <label for="box2_desc" class="control-label">
                                         <small class="req text-danger">* </small>Detail
                                     </label>
                                     <input type="textarea" placeholder="Box 2 Description" id="box2_desc" name="box2_desc" class="form-control" value="<?php print_r($data[0]->box2_desc); ?>">
                                     <label for="box2_price" class="control-label">
                                         <small class="req text-danger">* </small>Price
                                     </label>
-                                    <input type="number" placeholder="(€)" id="box2_price" name="box2_price" class="form-control" value="<?php print_r($data[0]->box2_price); ?>">
+                                    <input type="text" placeholder="(€)" id="box2_price" name="box2_price" class="form-control" value="<?php print_r($data[0]->box2_price); ?>">
                                 </div>
                             </div>
                             <div class="col-md-3 col-xs-6 border-right">
@@ -156,7 +156,7 @@
                                     <label for="box3_price" class="control-label">
                                         <small class="req text-danger">* </small>Price
                                     </label>
-                                    <input type="number" placeholder="(€)" id="box3_price" name="box3_price" class="form-control" value="<?php print_r($data[0]->box3_price); ?>">
+                                    <input type="text" placeholder="(€)" id="box3_price" name="box3_price" class="form-control" value="<?php print_r($data[0]->box3_price); ?>">
                                 </div>
                             </div>
                             <div class="col-md-3 col-xs-6">
@@ -177,7 +177,7 @@
                                     <label for="box4_price" class="control-label">
                                         <small class="req text-danger">* </small>Price
                                     </label>
-                                    <input type="number" placeholder="(€)" id="box4_price" name="box4_price" class="form-control" value="<?php print_r($data[0]->box4_price); ?>">
+                                    <input type="text" placeholder="(€)" id="box4_price" name="box4_price" class="form-control" value="<?php print_r($data[0]->box4_price); ?>">
                                 </div>
                             </div>
 
@@ -186,8 +186,8 @@
                         <!-- 
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <div class="form-group" app-field-wrapper="rate"><label for="rate" class="control-label"> <small class="req text-danger">* </small>Basic</label><input type="number" id="rate" name="rate" class="form-control" min="0.00" value="<?php # print_r($data[0]->); 
-                                                                                                                                                                                                                                                                            ?>"></div>
+                                        <div class="form-group" app-field-wrapper="rate"><label for="rate" class="control-label"> <small class="req text-danger">* </small>Basic</label><input type="text" id="rate" name="rate" class="form-control" min="0.00" value="<?php # print_r($data[0]->); 
+                                                                                                                                                                                                                                                                        ?>"></div>
                                     </div>
                                     <div class="col-md-3">
                                         <label>Tax</label>
@@ -208,8 +208,8 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2">
-                                        <div class="form-group" app-field-wrapper="quantity_number"><label for="quantity_number" class="control-label"> <small class="req text-danger">* </small>Quantité</label><input type="number" id="quantity_number" name="quantity_number" class="form-control" value="<?php # print_r($data[0]->); 
-                                                                                                                                                                                                                                                                                                                ?>"></div>
+                                        <div class="form-group" app-field-wrapper="quantity_number"><label for="quantity_number" class="control-label"> <small class="req text-danger">* </small>Quantité</label><input type="text" id="quantity_number" name="quantity_number" class="form-control" value="<?php # print_r($data[0]->); 
+                                                                                                                                                                                                                                                                                                            ?>"></div>
                                     </div>
                                     <div class="col-md-4">
                                         <label for="is_digital">Aucune quantité ne s'applique - Produit numérique</label>
@@ -257,7 +257,7 @@
                                     </div>
                                     <div class="recurring_custom hide">
                                         <div class="col-md-2">
-                                            <div class="form-group" app-field-wrapper="repeat_every_custom"><label for="repeat_every_custom" class="control-label">Number</label><input type="number" id="repeat_every_custom" name="repeat_every_custom" class="form-control" min="1" value="1"></div>
+                                            <div class="form-group" app-field-wrapper="repeat_every_custom"><label for="repeat_every_custom" class="control-label">Number</label><input type="text" id="repeat_every_custom" name="repeat_every_custom" class="form-control" min="1" value="1"></div>
                                         </div>
                                         <div class="col-md-5">
                                             <label>Select</label>
@@ -286,7 +286,7 @@
                                             <div class="form-group recurring-cycles">
                                                 <label for="cycles">Total de cycles </label>
                                                 <div class="input-group">
-                                                    <input type="number" class="form-control" disabled="" name="cycles" id="cycles" value="0">
+                                                    <input type="text" class="form-control" disabled="" name="cycles" id="cycles" value="0">
                                                     <div class="input-group-addon">
                                                         <div class="checkbox">
                                                             <input type="checkbox" checked="" id="unlimited_cycles">
@@ -353,6 +353,23 @@
             }
         });
 
+        $("#basic_price").keydown(function(event) {
+            if (event.shiftKey == true) {
+                event.preventDefault();
+            }
+            if ((event.keyCode >= 48 && event.keyCode <= 57) ||
+                (event.keyCode >= 96 && event.keyCode <= 105) ||
+                event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 37 ||
+                event.keyCode == 39 || event.keyCode == 46 || event.keyCode == 190) {
+            } else {
+                event.preventDefault();
+                alert("Only Number and . Allowed!");
+            }
+            if ($(this).val().indexOf('.') !== -1 && event.keyCode == 190)
+                event.preventDefault();
+            //if a decimal has been added, disable the "."-button
+
+        });
 
 
         // alert("Welcome");

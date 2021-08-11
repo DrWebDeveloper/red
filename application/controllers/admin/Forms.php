@@ -14,19 +14,41 @@ class Forms extends AdminController
 
     public function redaction()
     {
-        if($this->input->post('save'))
+        if($_POST)
+        // if($this->input->post('save'))
 		{
 		    $data['no_texts']= $this->input->post('no_texts');
             $data['no_words']= $this->input->post('no_words');
             $data['basic_desc']= $this->input->post('basic_desc');
-            $data['standard_desc']= $this->input->post('standard_desc');
-            $data['professional_desc']= $this->input->post('professional_desc');
             $data['basic_price']= $this->input->post('basic_price');
+            $data['standard_desc']= $this->input->post('standard_desc');
             $data['standard_price']= $this->input->post('standard_price');
+            $data['professional_desc']= $this->input->post('professional_desc');
             $data['professional_price']= $this->input->post('professional_price');
-			$response=$this->Forms_model->saverecords($data);
+            
+            $data['box1_title']= $this->input->post('box1_title');
+            $data['box1_desc']= $this->input->post('box1_desc');
+            $data['box1_price']= $this->input->post('box1_price');
+
+            $data['box2_title']= $this->input->post('box2_title');
+            $data['box2_desc']= $this->input->post('box2_desc');
+            $data['box2_price']= $this->input->post('box2_price');
+
+            $data['box3_title']= $this->input->post('box3_title');
+            $data['box3_desc']= $this->input->post('box3_desc');
+            $data['box3_price']= $this->input->post('box3_price');
+
+            $data['box4_title']= $this->input->post('box4_title');
+            $data['box4_desc']= $this->input->post('box4_desc');
+            $data['box4_price']= $this->input->post('box4_price');
+
+			$response=$this->Forms_model->saverecords($data, ["id"=>1]);
 			if($response==true){
-			        echo "Records Saved Successfully";
+                set_alert('success', _l('Redaction Form Updated Successfully'));
+                // $result['data'] = $this->Forms_model->display_records();
+                // redirect('/account/login', 'refresh');
+                $this->agent->referrer();
+                // $this->load->view('admin/forms/redaction');
 			}
 			else{
 					echo "Insert error !";

@@ -38,9 +38,10 @@ class Forms_model extends App_Model
      * @param mixed $data All $_POST data
      * @return  boolean
      */
-    public function saverecords($data)
+    public function saverecords($data, $id)
     {
-        $this->db->insert(db_prefix().'forms',$data);
+        $this->db->where('id', 1);
+        $this->db->update(db_prefix().'forms',$data);
         return true;
     }
 
