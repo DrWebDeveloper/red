@@ -1,0 +1,4 @@
+Nombre de textes que vous souhaitez faire rédiger : $textNumbers\n
+Nombre de mots par texte:\t\t\t $motsNumbers\n
+Qualité des textes : \t\t\t     $quantityName | $quantityValue\n
+$supplementaries

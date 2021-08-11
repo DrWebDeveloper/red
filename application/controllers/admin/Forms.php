@@ -1,0 +1,112 @@
+<?php
+
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Forms extends AdminController
+{
+
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->forms = $this->load->model('Forms_model');
+    }
+
+    public function redaction()
+    {
+        // $tb = $this->load->model('Forms_model')->get('id');
+        $result['data']=$this->Forms_model->display_records();
+        $this->load->view('admin/forms/redaction',$result);
+        // $data = $tb->result();
+        
+        // foreach ($query->result() as $row) {
+        //     print_r($row);
+        // }
+        // $umar = $this->db->query('SELECT * FROM tblforms');
+        // $umar =  $this->db->table('my_table')->countAll();
+        // $this->load->view('admin/forms/redaction', ["data" => $data]);
+    }
+    public function correction()
+    {
+        $this->load->view('admin/forms/correction');
+    }
+
+    /* List all custom fields */
+    public function index()
+    {
+
+        $this->load->view('admin/forms/index');
+        // if ($this->input->is_ajax_request()) {
+        //     $this->app->get_table_data('custom_fields');
+        // }
+        // $data['title'] = _l('custom_fields');
+        // $this->load->view('admin/forms/manage', $data);
+    }
+
+    public function field($id = '')
+    {
+        if ($this->input->post()) {
+            if ($id == '') {
+                $id = $this->forms->add($this->input->post());
+                set_alert('success', _l('added_successfully', _l('custom_field')));
+                echo json_encode(['id' => $id]);
+                die;
+            }
+            $success = $this->forms->update($this->input->post(), $id);
+            if (is_array($success) && isset($success['cant_change_option_custom_field'])) {
+                set_alert('warning', _l('cf_option_in_use'));
+            } elseif ($success === true) {
+                set_alert('success', _l('updated_successfully', _l('custom_field')));
+            }
+            echo json_encode(['id' => $id]);
+            die;
+        }
+
+        if ($id == '') {
+            $title = _l('add_new', _l('custom_field_lowercase'));
+        } else {
+            $data['custom_field'] = $this->forms->get($id);
+            $title                = _l('edit', _l('custom_field_lowercase'));
+        }
+
+        $data['pdf_fields']             = $this->pdf_fields;
+        $data['client_portal_fields']   = $this->client_portal_fields;
+        $data['client_editable_fields'] = $this->client_editable_fields;
+        $data['title']                  = $title;
+        $this->load->view('admin/custom_fields/customfield', $data);
+    }
+
+    /* Delete announcement from database */
+    public function delete($id)
+    {
+        if (!$id) {
+            redirect(admin_url('custom_fields'));
+        }
+        $response = $this->forms->delete($id);
+        if ($response == true) {
+            set_alert('success', _l('deleted', _l('custom_field')));
+        } else {
+            set_alert('warning', _l('problem_deleting', _l('custom_field_lowercase')));
+        }
+        redirect(admin_url('custom_fields'));
+    }
+
+    /* Change custom field status active or inactive */
+    public function change_custom_field_status($id, $status)
+    {
+        if ($this->input->is_ajax_request()) {
+            $this->forms->change_custom_field_status($id, $status);
+        }
+    }
+
+    public function validate_default_date()
+    {
+        $date = strtotime($this->input->post('date'));
+        $type = $this->input->post('type');
+
+        echo json_encode([
+            'valid'  => $date !== false,
+            'sample' => $date ? $type == 'date_picker' ? _d(date('Y-m-d', $date)) : _dt(date('Y-m-d H:i', $date)) : null,
+        ]);
+    }
+}

@@ -1,0 +1,12 @@
+
+Nombre de textes que vous souhaitez faire rédiger : 3
+
+Nombre de mots par texte:4
+
+Qualité des textes : premier prix | 0.028
+
+Supplementaries values: 
+Formated HTML: 10
+Optimisation SEO: 10
+Recherche et documentation: 10
+

@@ -1,0 +1,12 @@
+
+Nombre de textes que vous souhaitez faire rédiger : 4
+
+Nombre de mots par texte:8
+
+Qualité des textes : Professionnelle | 0.056
+
+Supplementaries values: 
+Formated HTML: 10
+Optimisation SEO: 10
+Recherche et documentation: 10
+
