@@ -103,7 +103,7 @@
                                         <label for="product_name" class="control-label">
                                             <small class="req text-danger">* </small>Detail
                                         </label>
-                                        <input type="textarea" placeholder="Box Description" id="box1_desc" name="box1_desc" class="form-control" value="<?php print_r($data[0]->box1_desc); ?>">
+                                        <input type="textarea" placeholder="Box 1 Description" id="box1_desc" name="box1_desc" class="form-control" value="<?php print_r($data[0]->box1_desc); ?>">
                                         <label for="box1_price" class="control-label">
                                             <small class="req text-danger">* </small>Price
                                         </label>
@@ -124,7 +124,7 @@
                                         <label for="product_name" class="control-label">
                                             <small class="req text-danger">* </small>Detail
                                         </label>
-                                        <input type="textarea" placeholder="Box Description" id="box2_desc" name="box2_desc" class="form-control" value="<?php print_r($data[0]->box2_desc); ?>">
+                                        <input type="textarea" placeholder="Box 2 Description" id="box2_desc" name="box2_desc" class="form-control" value="<?php print_r($data[0]->box2_desc); ?>">
                                         <label for="box2_price" class="control-label">
                                             <small class="req text-danger">* </small>Price
                                         </label>
@@ -145,7 +145,7 @@
                                         <label for="product_name" class="control-label">
                                             <small class="req text-danger">* </small>Detail
                                         </label>
-                                        <input type="textarea" placeholder="Box Description" id="box3_desc" name="box3_desc" class="form-control" value="<?php print_r($data[0]->box3_desc); ?>">
+                                        <input type="textarea" placeholder="Box 3 Description" id="box3_desc" name="box3_desc" class="form-control" value="<?php print_r($data[0]->box3_desc); ?>">
                                         <label for="box3_price" class="control-label">
                                             <small class="req text-danger">* </small>Price
                                         </label>
@@ -166,7 +166,7 @@
                                         <label for="product_name" class="control-label">
                                             <small class="req text-danger">* </small>Detail
                                         </label>
-                                        <input type="textarea" placeholder="Box Description" id="box4_desc" name="box4_desc" class="form-control" value="<?php print_r($data[0]->box4_desc); ?>">
+                                        <input type="textarea" placeholder="Box 4 Description" id="box4_desc" name="box4_desc" class="form-control" value="<?php print_r($data[0]->box4_desc); ?>">
                                         <label for="box4_price" class="control-label">
                                             <small class="req text-danger">* </small>Price
                                         </label>
