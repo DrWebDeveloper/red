@@ -32,6 +32,14 @@ class Umar extends ClientsController
 	{
 		$this->load->model('Forms_model');
 		$data = $this->Forms_model->get(1);
+		$no_texts = explode(',',$data->no_texts);    
+		$no_words = explode(',',$data->no_words);    
+		$prix_desc = $data->prix_desc;
+		$prix_price = $data->prix_price;
+		$standard_desc = $data->standard_desc;
+		$standard_price = $data->standard_price;
+		$professional_desc = $data->professional_desc;
+		$professional_price = $data->professional_price;
 		// echo "<pre>";
 		// $array = json_decode(json_encode($data), true);
 		// print_r($array);
@@ -43,7 +51,16 @@ class Umar extends ClientsController
 		// 	print_r($array);
 		// 	echo "</pre>";
 		//   }
-		$this->load->view('forms/redaction',["data"=>$data]);
+		$this->load->view('forms/redaction',[
+			"no_texts"=>$no_texts,
+			"no_words"=>$no_words,
+			"prix_desc"=>$prix_desc,
+			"prix_price"=>$prix_price,
+			"standard_desc"=>$standard_desc,
+			"standard_price"=>$prix_desc,
+			"professional_desc"=>$professional_desc,
+			"professional_price"=>$professional_price
+		]);
 	}
 	public function packs_marketing()
 	{
