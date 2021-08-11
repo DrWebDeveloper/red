@@ -179,7 +179,7 @@
                             <!-- 
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <div class="form-group" app-field-wrapper="rate"><label for="rate" class="control-label"> <small class="req text-danger">* </small>Basic</label><input type="number" id="rate" name="rate" class="form-control" min="0.00" value="<?php print_r($data[0]->); ?>"></div>
+                                        <div class="form-group" app-field-wrapper="rate"><label for="rate" class="control-label"> <small class="req text-danger">* </small>Basic</label><input type="number" id="rate" name="rate" class="form-control" min="0.00" value="<?php # print_r($data[0]->); ?>"></div>
                                     </div>
                                     <div class="col-md-3">
                                         <label>Tax</label>
@@ -200,12 +200,12 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2">
-                                        <div class="form-group" app-field-wrapper="quantity_number"><label for="quantity_number" class="control-label"> <small class="req text-danger">* </small>Quantité</label><input type="number" id="quantity_number" name="quantity_number" class="form-control" value="<?php print_r($data[0]->); ?>"></div>
+                                        <div class="form-group" app-field-wrapper="quantity_number"><label for="quantity_number" class="control-label"> <small class="req text-danger">* </small>Quantité</label><input type="number" id="quantity_number" name="quantity_number" class="form-control" value="<?php # print_r($data[0]->); ?>"></div>
                                     </div>
                                     <div class="col-md-4">
                                         <label for="is_digital">Aucune quantité ne s'applique - Produit numérique</label>
                                         <div class="checkbox checkbox-danger">
-                                            <input type="checkbox" name="is_digital" id="is_digital" value="<?php print_r($data[0]->); ?>">
+                                            <input type="checkbox" name="is_digital" id="is_digital" value="<?php # print_r($data[0]->); ?>">
                                             <label></label>
                                         </div>
                                     </div>
