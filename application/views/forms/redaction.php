@@ -61,6 +61,9 @@
     <!-- fieldsets -->
     <fieldset type="description" id="description">
       <h3>Sélectionnez vos besoins</h3>
+      <?php 
+      $texts = explode(',',$data->no_texts);    
+      ?>
      <div class="col-12 pull-left">
       <div class="form-row"> 
     
@@ -73,10 +76,16 @@
               </label>
               <!-- <input type="number" list="numberdetexts"  placeholder=""> -->
               
-              
+               
               
               <select class="form-control" name="textnumbers" id="textnumbersinput" id="numberdetexts">
                 <option value="">Select De Textes</option>
+                <?php
+                foreach($texts as $key=>$value){
+                  echo "<option value='$value'>$value</option>";
+                }  
+                ?>
+                <!-- <option value="">Select De Textes</option> -->
               </select>
              
         </div>  

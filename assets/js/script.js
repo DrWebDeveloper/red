@@ -3,12 +3,12 @@
     
     var base_url="/r";
     // var base_url="";
-    for(var i=0;i<10;i++){
-        $("#textnumbersinput").append(`<option value='${i}'>${i}</option>`)
-    }
-    for(var i=0;i<10;i++){
-        $("#motsnumbersinput").append(`<option value='${i}'>${i}</option>`)
-    }
+    // for(var i=0;i<10;i++){
+    //     $("#textnumbersinput").append(`<option value='${i}'>${i}</option>`)
+    // }
+    // for(var i=0;i<10;i++){
+    //     $("#motsnumbersinput").append(`<option value='${i}'>${i}</option>`)
+    // }
     
    
     // if(loggedIn=="true"){
