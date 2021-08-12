@@ -69,15 +69,15 @@
 			 <div class="card-body">
 			 <span style="float:left;">
 
-			 <input type="radio" name="quality" id="qualiltyinput" value='{"name":"premier prix","value":"0.028"}' >
+			 <input type="radio" name="quality" id="qualiltyinput" value='{"name":"premier prix","value":"<?php echo $basic_price ?>"}' >
 			 </span>
 			   <h5>Qualité premier prix</h5>
-			   <p>Textes de qualité basique destinés à des descriptions simples et des rédactions de remplissage.</p>
+			   <p><?php echo $basic_desc ?></p>
 			 <hr>
 			   <div class="col-12">
 			  
 			   <span>Prix au mot :</span>
-				 <span class="btn btn-default" style="color: black!important;">dès 0,028 €</span>
+				 <span class="btn btn-default" style="color: black!important;">dès <?php echo $basic_price ?> €</span>
 				 
 			   </div>
 
@@ -106,16 +106,16 @@
 			 <span style="float:left;">
 
 			 <input type="radio" name="quality" id="qualityinput"
-			 value='{"name":"Standard","value":0.042}'
+			 value='{"name":"Standard","value":<?php echo $standard_price ?>}'
 			 >
 			 </span>
 			   <h5>Qualité standard</h5>
-			   <p>Textes de qualité standard pour lecteurs humains et moteurs de recherche : billets de blog, fiches articles, descriptions etc.</p>
+			   <p><?php echo $standard_desc ?></p>
 			   <hr>
 			   <div class="col-12">
 			  
 			   <span>Prix au mot :</span>
-				 <span class="btn btn-default" style="color: black!important;">dès 0,042 €</span>
+				 <span class="btn btn-default" style="color: black!important;">dès <?php echo $standard_price ?> €</span>
 			   </div>
 
 
@@ -144,15 +144,15 @@
 			 <span style="float:left;">
 
 			 <input type="radio" name="quality" id="qualityinput"
-			 value='{"name":"Professionnelle","value":0.056}'>
+			 value='{"name":"Professionnelle","value":<?php echo $professional_price ?>}'>
 			 </span>
 			   <h5>Qualité professionnelle</h5>
-			   <p>Textes de qualité supérieure pour lecteurs professionnels : billets de blog, textes marketing, textes d'actualité, rapports etc.</p>
+			   <p><?php echo $professional_desc ?></p>
 			   <hr>
 			   <div class="col-12">
 			  
 			   <span>Prix au mot :</span>
-				 <span class="btn btn-default" style="color: black!important;">dès 0,056 €</span>
+				 <span class="btn btn-default" style="color: black!important;">dès <?php echo $professional_price ?> €</span>
 			   </div>
 
 

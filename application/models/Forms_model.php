@@ -16,12 +16,25 @@ class Forms_model extends App_Model
      * @return object
      * Get single custom field
      */
-    function display_records()
+    function display_records($id)
     {
-      $query=$this->db->get("forms");
+        $query = $this->db->get_where('forms', array('id' => $id));
+    //   $query=$this->db->get("forms");
       return $query->result();
     }
       
+    /**
+     * Add new custom field
+     * @param mixed $data All $_POST data
+     * @return  boolean
+     */
+    public function saverecords($data, $id)
+    {
+        $this->db->where('id', $id);
+        $this->db->update(db_prefix().'forms',$data);
+        return true;
+    }
+    
     public function get($id = false)
     {
         if (is_numeric($id)) {
@@ -33,17 +46,6 @@ class Forms_model extends App_Model
         return $this->db->get(db_prefix().'forms')->result_array();
     }
 
-    /**
-     * Add new custom field
-     * @param mixed $data All $_POST data
-     * @return  boolean
-     */
-    public function saverecords($data, $id)
-    {
-        $this->db->where('id', 1);
-        $this->db->update(db_prefix().'forms',$data);
-        return true;
-    }
 
     /**
      * Update custom field

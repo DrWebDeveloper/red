@@ -57,7 +57,7 @@ $route['translate_uri_dashes'] = false;
 
 /**
  * # Umar's defined routes
-*/
+ */
 $route['contact']   = 'umar/contact';
 $route['redaction']   = 'umar/redaction';
 $route['correction']   = 'umar/correction';
@@ -92,15 +92,21 @@ $route['admin/items/search'] = 'admin/invoice_items/search';
 
 /**
  * # Umar's Admin defined routes
-*/
+ */
 $route['admin/forms'] = 'admin/forms/index';
+// $route['admin/forms/redaction']['post'] = function(){
+//     var_dump($_POST);
+// };
 $route['admin/forms/redaction'] = 'admin/forms/redaction';
-$route['admin/forms/redaction/update/'] = 'admin/forms/redaction/update';
-$route['admin/forms/redaction/update/'] = function (){
-    echo "woww";
-};
-$route['admin/forms/redaction/preds'] = 'admin/forms/redaction/preds';
 $route['admin/forms/correction'] = 'admin/forms/correction';
+
+
+
+// $route['admin/forms/redaction/update/'] = 'admin/forms/redaction/update';
+// $route['admin/forms/redaction/update/'] = function (){
+//     echo "woww";
+// };
+// $route['admin/forms/redaction/preds'] = 'admin/forms/redaction/preds';
 
 /**
  * In case if client access directly to url without the arguments redirect to clients url
@@ -178,7 +184,7 @@ $route['reset_password']  = 'authentication/reset_password';
 $route['forgot_password'] = 'authentication/forgot_password';
 $route['login']           = 'authentication/login';
 $route['logout']          = 'authentication/logout';
-$route['register']        = 'authentication/register'; 
+$route['register']        = 'authentication/register';
 
 /**
  * Terms and conditions and Privacy Policy routes
