@@ -92,7 +92,13 @@ class Umar extends ClientsController
 			"box3_price" => $data->box3_price,
 			"box4_title" => $data->box4_title,
 			"box4_desc" => $data->box4_desc,
-			"box4_price" => $data->box4_price
+			"box4_price" => $data->box4_price,
+			"box5_title" => $data->box5_title,
+			"box5_desc" => $data->box5_desc,
+			"box5_price" => $data->box5_price,
+			"box6_title" => $data->box6_title,
+			"box6_desc" => $data->box6_desc,
+			"box6_price" => $data->box6_price
 		]);
 	}
 	public function packs_marketing()

@@ -110,7 +110,7 @@
                         <hr>
                         <div class="row">
 
-                            <div class="col-md-3 col-xs-6 border-right">
+                            <div class="col-md-4 col-xs-6 border-right">
                                 <h4 class="bold no-mtop">Box 1</h4>
                                 <p style="color:#989898" class="font-medium no-mbot">
                                 </p>
@@ -136,7 +136,7 @@
                                         class="form-control" value="<?php print_r($data[0]->box1_price); ?>">
                                 </div>
                             </div>
-                            <div class="col-md-3 col-xs-6 border-right">
+                            <div class="col-md-4 col-xs-6 border-right">
                                 <h4 class="bold no-mtop">Box 2</h4>
                                 <p style="color:#03A9F4" class="font-medium no-mbot">
                                 </p>
@@ -162,7 +162,7 @@
                                         class="form-control" value="<?php print_r($data[0]->box2_price); ?>">
                                 </div>
                             </div>
-                            <div class="col-md-3 col-xs-6 border-right">
+                            <div class="col-md-4 col-xs-6">
                                 <h4 class="bold no-mtop">Box 3</h4>
                                 <p style="color:#2d2d2d" class="font-medium no-mbot">
                                 </p>
@@ -188,7 +188,7 @@
                                         class="form-control" value="<?php print_r($data[0]->box3_price); ?>">
                                 </div>
                             </div>
-                            <div class="col-md-3 col-xs-6">
+                            <div class="col-md-4 col-xs-6  border-right">
                                 <h4 class="bold no-mtop">Box 4</h4>
                                 <p style="color:#adca65" class="font-medium no-mbot">
                                 </p>
@@ -212,6 +212,58 @@
                                     </label>
                                     <input type="text" placeholder="(€)" id="box4_price" name="box4_price"
                                         class="form-control" value="<?php print_r($data[0]->box4_price); ?>">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6  border-right">
+                                <h4 class="bold no-mtop">Box 5</h4>
+                                <p style="color:#adca65" class="font-medium no-mbot">
+                                </p>
+                                <!-- <p class="font-medium-xs no-mbot text-muted">
+                                        Tâches qui me sont assignées: 0 </p> -->
+                                <div class="form-group" app-field-wrapper="box5_title">
+                                    <label for="box5_title" class="control-label">
+                                        <small class="req text-danger">* </small>Title
+                                    </label>
+                                    <input type="text" placeholder="Example; Research and Documentation" id="box5_title"
+                                        name="box5_title" class="form-control"
+                                        value="<?php print_r($data[0]->box5_title); ?>">
+                                    <label for="product_name" class="control-label">
+                                        <small class="req text-danger">* </small>Detail
+                                    </label>
+                                    <input type="textarea" placeholder="Box 5 Description" id="box5_desc"
+                                        name="box5_desc" class="form-control"
+                                        value="<?php print_r($data[0]->box5_desc); ?>">
+                                    <label for="box5_price" class="control-label">
+                                        <small class="req text-danger">* </small>Price
+                                    </label>
+                                    <input type="text" placeholder="(€)" id="box5_price" name="box5_price"
+                                        class="form-control" value="<?php print_r($data[0]->box5_price); ?>">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <h4 class="bold no-mtop">Box 6</h4>
+                                <p style="color:#adca65" class="font-medium no-mbot">
+                                </p>
+                                <!-- <p class="font-medium-xs no-mbot text-muted">
+                                        Tâches qui me sont assignées: 0 </p> -->
+                                <div class="form-group" app-field-wrapper="box6_title">
+                                    <label for="box6_title" class="control-label">
+                                        <small class="req text-danger">* </small>Title
+                                    </label>
+                                    <input type="text" placeholder="Example; Research and Documentation" id="box6_title"
+                                        name="box6_title" class="form-control"
+                                        value="<?php print_r($data[0]->box6_title); ?>">
+                                    <label for="product_name" class="control-label">
+                                        <small class="req text-danger">* </small>Detail
+                                    </label>
+                                    <input type="textarea" placeholder="Box 6 Description" id="box6_desc"
+                                        name="box6_desc" class="form-control"
+                                        value="<?php print_r($data[0]->box6_desc); ?>">
+                                    <label for="box6_price" class="control-label">
+                                        <small class="req text-danger">* </small>Price
+                                    </label>
+                                    <input type="text" placeholder="(€)" id="box6_price" name="box6_price"
+                                        class="form-control" value="<?php print_r($data[0]->box6_price); ?>">
                                 </div>
                             </div>
 
@@ -396,7 +448,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#basic_price").keydown(function(event) {
+    $("#basic_price , #standard_price, #professional_price").keydown(function(event) {
         if (event.shiftKey == true) {
             event.preventDefault();
         }

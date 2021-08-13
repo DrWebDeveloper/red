@@ -121,7 +121,7 @@
                  <div class="card-body">
                    <span style="float:left;">
 
-                     <input type="radio" name="quality" id="qualiltyinput" value='{"name":"premier prix","value":"0.028"}'>
+                     <input type="radio" name="quality" id="qualiltyinput" value='{"name":"premier prix","value":"<?php echo $basic_desc ?>"}'>
                    </span>
                    <h5>Qualité premier prix</h5>
                    <p><?php echo $basic_desc ?></p>
@@ -157,7 +157,7 @@
                  <div class="card-body">
                    <span style="float:left;">
 
-                     <input type="radio" name="quality" id="qualityinput" value='{"name":"Standard","value":0.042}'>
+                     <input type="radio" name="quality" id="qualityinput" value='{"name":"Standard","value":<?php echo $standard_desc ?>}'>
                    </span>
                    <h5>Qualité Standard</h5>
                    <p><?php echo $standard_desc ?></p>
@@ -193,7 +193,7 @@
                  <div class="card-body">
                    <span style="float:left;">
 
-                     <input type="radio" name="quality" id="qualityinput" value='{"name":"Professionnelle","value":0.056}'>
+                     <input type="radio" name="quality" id="qualityinput" value='{"name":"Professionnelle","value":<?php echo $professional_desc ?>}'>
                    </span>
                    <h5>Qualité professionnelle</h5>
                    <p><?php echo $professional_desc ?></p>
@@ -244,13 +244,13 @@
 
                    Options supplémentaires
                  </label>
-
-
+<div class="row" style="width: 60% !important;">
+<div class="col-4 p-2">
                  <label class="card" style="width: 29rem;  text-align:left;  margin:5px;">
                    <div class="card-body">
 
                      <span style="float:left;">
-                       <input type="checkbox" name="supplementaries[]" id="formatedhtml" value='{"name":"Formated HTML","value":<?php echo $box1_price ?>}'>
+                       <input type="checkbox" name="supplementaries[]" id="formatedhtml" value='{"name":"<?php echo $box1_title ?>","value":<?php echo $box1_price ?>}'>
                      </span>
 
                      <h5 style="color:black;"><?php echo $box1_title ?></h5>
@@ -258,13 +258,13 @@
                      <p style="color:black;"><?php echo $box1_desc ?></p>
                    </div>
                  </label>
-
-
+</div>
+<div class="col-4 p-2">
                  <label class="card" style="width: 29rem;  text-align:left; margin:5px;">
                    <div class="card-body">
 
                      <span style="float:left;">
-                       <input type="checkbox" name="supplementaries[]" id="optimizedseo" value='{"name":"Optimisation SEO","value":<?php echo $box2_price ?>}'>
+                       <input type="checkbox" name="supplementaries[]" id="optimizedseo" value='{"name":"<?php echo $box2_title ?>","value":<?php echo $box2_price ?>}'>
                      </span>
 
                      <h5 style="color:black;"><?php echo $box2_title ?></h5>
@@ -276,13 +276,13 @@
                    </div>
 
                  </label>
-
-
+</div>
+<div class="col-4 p-2">
                  <label class="card" style="width: 29rem;  text-align:left; margin:5px;">
                    <div class="card-body">
 
                      <span style="float:left;">
-                       <input type="checkbox" name="supplementaries[]" id="confidential" value='{"name":"Commande confidentielle","value":<?php echo $box3_price ?>}'>
+                       <input type="checkbox" name="supplementaries[]" id="confidential" value='{"name":"<?php echo $box3_title ?>","value":<?php echo $box3_price ?>}'>
                      </span>
 
                      <h5 style="color:black;"><?php echo $box3_title ?></h5>
@@ -293,13 +293,13 @@
                    </div>
 
                  </label>
-
-
+</div>
+<div class="col-4 p-2">
                  <label class="card" style="width: 29rem;  text-align:left; margin:5px;">
                    <div class="card-body">
 
                      <span style="float:left;">
-                       <input type="checkbox" name="supplementaries[]" id="documentation" value='{"name":"Recherche et documentation","value":<?php echo $box4_price ?>}'>
+                       <input type="checkbox" name="supplementaries[]" id="documentation" value='{"name":"Recherche <?php echo $box4_title ?>","value":<?php echo $box4_price ?>}'>
                      </span>
 
                      <h5 style="color:black;"><?php echo $box4_title ?></h5>
@@ -311,7 +311,45 @@
                    </div>
 
                  </label>
+</div>
+<div class="col-4 p-2">
+                 <label class="card" style="width: 29rem;  text-align:left; margin:5px;">
+                   <div class="card-body">
 
+                     <span style="float:left;">
+                       <input type="checkbox" name="supplementaries[]" id="documentation" value='{"name":"<?php echo $box5_title ?>","value":<?php echo $box5_price ?>}'>
+                     </span>
+
+                     <h5 style="color:black;"><?php echo $box5_title ?></h5>
+                     <span class="badge badge-secondary">+ <?php echo $box5_price ?> €</span>
+
+                     <p style="color:black;"><?php echo $box5_desc ?></p>
+
+
+                   </div>
+
+                 </label>
+</div>
+<div class="col-4 p-2">
+                 <label class="card" style="width: 29rem;  text-align:left; margin:5px;">
+                   <div class="card-body">
+
+                     <span style="float:left;">
+                       <input type="checkbox" name="supplementaries[]" id="documentation" value='{"name":"<?php echo $box6_title ?>","value":<?php echo $box6_price ?>}'>
+                     </span>
+
+                     <h5 style="color:black;"><?php echo $box6_title ?></h5>
+                     <span class="badge badge-secondary">+ <?php echo $box6_price ?> €</span>
+
+                     <p style="color:black;"><?php echo $box6_desc ?></p>
+
+
+                   </div>
+
+                 </label>
+                 
+                 </div>
+                 </div>
                  <!-- 
 
           

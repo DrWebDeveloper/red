@@ -1194,3 +1194,91 @@ ERROR - 2021-08-12 11:27:48 --> Could not find the language line "Commande ajout
 ERROR - 2021-08-12 11:27:48 --> Could not find the language line "Commande ajoutée"
 ERROR - 2021-08-12 11:27:54 --> 404 Page Not Found: /index
 ERROR - 2021-08-12 11:29:11 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 11:45:07 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:45:07 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:45:22 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:45:22 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:45:42 --> Could not find the language line "Correction Form Updated Successfully"
+ERROR - 2021-08-12 11:45:42 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:45:42 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:46:02 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:46:02 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:46:29 --> Could not find the language line "Correction Form Updated Successfully"
+ERROR - 2021-08-12 11:46:30 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:46:30 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:49:09 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:49:09 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:49:11 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:49:11 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:49:14 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:49:14 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:49:35 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 11:53:48 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 11:53:48 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:12:38 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:12:38 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:12:38 --> Severity: Notice --> Undefined property: stdClass::$box5_title C:\xampp\htdocs\r\application\views\admin\forms\redaction.php 229
+ERROR - 2021-08-12 12:12:38 --> Severity: Notice --> Undefined property: stdClass::$box5_desc C:\xampp\htdocs\r\application\views\admin\forms\redaction.php 235
+ERROR - 2021-08-12 12:12:38 --> Severity: Notice --> Undefined property: stdClass::$box5_price C:\xampp\htdocs\r\application\views\admin\forms\redaction.php 240
+ERROR - 2021-08-12 12:12:38 --> Severity: Notice --> Undefined property: stdClass::$box6_title C:\xampp\htdocs\r\application\views\admin\forms\redaction.php 255
+ERROR - 2021-08-12 12:12:38 --> Severity: Notice --> Undefined property: stdClass::$box6_desc C:\xampp\htdocs\r\application\views\admin\forms\redaction.php 261
+ERROR - 2021-08-12 12:12:38 --> Severity: Notice --> Undefined property: stdClass::$box6_price C:\xampp\htdocs\r\application\views\admin\forms\redaction.php 266
+ERROR - 2021-08-12 12:14:50 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:14:50 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:15:49 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:15:49 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:16:29 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:16:29 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:17:04 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:37:14 --> Severity: Notice --> Undefined variable: box5_price C:\xampp\htdocs\r\application\views\forms\redaction.php 319
+ERROR - 2021-08-12 12:37:14 --> Severity: Notice --> Undefined variable: box5_title C:\xampp\htdocs\r\application\views\forms\redaction.php 322
+ERROR - 2021-08-12 12:37:14 --> Severity: Notice --> Undefined variable: box5_price C:\xampp\htdocs\r\application\views\forms\redaction.php 323
+ERROR - 2021-08-12 12:37:14 --> Severity: Notice --> Undefined variable: box5_desc C:\xampp\htdocs\r\application\views\forms\redaction.php 325
+ERROR - 2021-08-12 12:37:14 --> Severity: Notice --> Undefined variable: box6_price C:\xampp\htdocs\r\application\views\forms\redaction.php 336
+ERROR - 2021-08-12 12:37:14 --> Severity: Notice --> Undefined variable: box6_title C:\xampp\htdocs\r\application\views\forms\redaction.php 339
+ERROR - 2021-08-12 12:37:14 --> Severity: Notice --> Undefined variable: box6_price C:\xampp\htdocs\r\application\views\forms\redaction.php 340
+ERROR - 2021-08-12 12:37:14 --> Severity: Notice --> Undefined variable: box6_desc C:\xampp\htdocs\r\application\views\forms\redaction.php 342
+ERROR - 2021-08-12 12:37:18 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:38:22 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:38:22 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:40:07 --> Could not find the language line "Redaction Form Updated Successfully"
+ERROR - 2021-08-12 12:40:08 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:40:08 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:40:12 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:40:12 --> Could not find the language line "Commande ajoutée"
+ERROR - 2021-08-12 12:40:18 --> Severity: Notice --> Undefined variable: box5_price C:\xampp\htdocs\r\application\views\forms\redaction.php 319
+ERROR - 2021-08-12 12:40:18 --> Severity: Notice --> Undefined variable: box5_title C:\xampp\htdocs\r\application\views\forms\redaction.php 322
+ERROR - 2021-08-12 12:40:18 --> Severity: Notice --> Undefined variable: box5_price C:\xampp\htdocs\r\application\views\forms\redaction.php 323
+ERROR - 2021-08-12 12:40:18 --> Severity: Notice --> Undefined variable: box5_desc C:\xampp\htdocs\r\application\views\forms\redaction.php 325
+ERROR - 2021-08-12 12:40:18 --> Severity: Notice --> Undefined variable: box6_price C:\xampp\htdocs\r\application\views\forms\redaction.php 336
+ERROR - 2021-08-12 12:40:18 --> Severity: Notice --> Undefined variable: box6_title C:\xampp\htdocs\r\application\views\forms\redaction.php 339
+ERROR - 2021-08-12 12:40:18 --> Severity: Notice --> Undefined variable: box6_price C:\xampp\htdocs\r\application\views\forms\redaction.php 340
+ERROR - 2021-08-12 12:40:18 --> Severity: Notice --> Undefined variable: box6_desc C:\xampp\htdocs\r\application\views\forms\redaction.php 342
+ERROR - 2021-08-12 12:40:18 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:43:38 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:44:03 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:46:54 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:46:55 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:47:08 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:49:32 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:49:53 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:50:04 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:51:45 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:52:09 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:52:46 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:53:28 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:53:28 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:54:58 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:55:52 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:55:53 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:56:22 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:56:22 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:57:42 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:57:42 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:58:19 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:58:46 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:58:50 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:59:28 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:59:29 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 12:59:39 --> 404 Page Not Found: /index
+ERROR - 2021-08-12 13:00:13 --> 404 Page Not Found: /index

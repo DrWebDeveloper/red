@@ -117,7 +117,7 @@ foreach ($quickActions as $key => $item) {
       <?php } ?>
       <li class="menu-item-products">
             <a href="#" aria-expanded="false">
-               <i class="fa fa-cart-plus menu-icon"></i>
+               <i class="fa fa-window-maximize menu-icon"></i>
                <span class="menu-text">
                   Public Forms </span>
                <span class="fa arrow pleft5"></span>

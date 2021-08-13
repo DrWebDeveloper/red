@@ -39,6 +39,14 @@ class Forms extends AdminController
             $data['box4_title']= $this->input->post('box4_title');
             $data['box4_desc']= $this->input->post('box4_desc');
             $data['box4_price']= $this->input->post('box4_price');
+            
+            $data['box5_title']= $this->input->post('box5_title');
+            $data['box5_desc']= $this->input->post('box5_desc');
+            $data['box5_price']= $this->input->post('box5_price');
+            
+            $data['box6_title']= $this->input->post('box6_title');
+            $data['box6_desc']= $this->input->post('box6_desc');
+            $data['box6_price']= $this->input->post('box6_price');
 
         	$response=$this->Forms_model->saverecords($data, 1);
         	if($response==true){
@@ -95,6 +103,14 @@ class Forms extends AdminController
             $data['box4_title']= $this->input->post('box4_title');
             $data['box4_desc']= $this->input->post('box4_desc');
             $data['box4_price']= $this->input->post('box4_price');
+            
+            $data['box5_title']= $this->input->post('box5_title');
+            $data['box5_desc']= $this->input->post('box5_desc');
+            $data['box5_price']= $this->input->post('box5_price');
+            
+            $data['box6_title']= $this->input->post('box6_title');
+            $data['box6_desc']= $this->input->post('box6_desc');
+            $data['box6_price']= $this->input->post('box6_price');
 
         	$response=$this->Forms_model->saverecords($data, 2);
         	if($response==true){

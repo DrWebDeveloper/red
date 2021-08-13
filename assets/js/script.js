@@ -507,7 +507,7 @@
                         supplementaryValues.push(val);
                         supplementaryValue+=val.value;
                         $("#supplementarieslist").append(`
-                <li><label style='width:70%; float:left;'>${val.name}</label>
+                <li><label style='width:0%; float:left;'>${val.name}</label>
                 <label style='width:30%; float:left;' id="quality">${val.value} €</label>
                   </li>`)
                     });

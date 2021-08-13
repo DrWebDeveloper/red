@@ -396,7 +396,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#basic_price").keydown(function(event) {
+    $("#basic_price , #standard_price, #professional_price").keydown(function(event) {
         if (event.shiftKey == true) {
             event.preventDefault();
         }
